@@ -1,0 +1,9 @@
+# Build artifacts
+/dist
+
+# Yarn modules
+/node_modules
+
+# Prepared lock file
+package-lock.json
+yarn.lock
