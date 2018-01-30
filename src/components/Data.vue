@@ -87,7 +87,8 @@
           this.liquidLevel.push(data.liquid_level_millimeters)
           this.airTemperature.push(data.air_temperature)
           this.airHumidity.push(data.air_humidity)
-          this.dataTime.push(new Date(data.inserted_at * 1000))
+          var measureTime = new Date(data.inserted_at * 1000)
+          this.dataTime.push(measureTime.toLocaleString())
         })
       }
     }
